@@ -29,7 +29,7 @@ namespace Web
             services.AddControllersWithViews();
             services.AddDbContext<DataContext>(options =>
             {
-                options.UseSqlServer(configuration.GetConnectionString("MyPortfolioDB"));
+                options.UseSqlServer(configuration.GetConnectionString("mu"));
             });
 
             services.AddScoped(typeof(IUnitOfWork<>), typeof(UnitOfWork<>)) ;
